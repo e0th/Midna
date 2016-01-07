@@ -1,0 +1,17 @@
+{
+    "name": "e0th/midna",
+    "description": "Telegram bot",
+    "license": "MIT",
+
+    "require": {
+        "irazasyed/telegram-bot-sdk": "^2.0",
+        "gabordemooij/redbean": "dev-master"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Midna\\": "src/",
+            "Midna\\Commands": "src/"
+        }
+    }
+}
