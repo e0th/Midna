@@ -15,6 +15,7 @@ $telegram = new Api( MIDNA_TOKEN );
 R::setup('sqlite:' . __DIR__ . '/../../database/database.db');
 
 $telegram -> addCommand( new Commands\Start() );
+$telegram -> addCommand( new Commands\Help() );
 $telegram -> commandsHandler( true );
 
 if( php_sapi_name() == 'cli' )
